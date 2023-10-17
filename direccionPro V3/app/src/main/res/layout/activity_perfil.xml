@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Perfil"
+    android:background="@color/black">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+
+       <Button
+           android:id="@+id/btnPPerfil"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Perfil"
+           android:onClick="PPerfil"
+           android:backgroundTint="@color/botonBienvenido"
+           android:layout_margin="5dp"/>
+
+       <Button
+           android:id="@+id/btnPDireccion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Dirección"
+           android:onClick="PDireccion"
+           android:backgroundTint="@color/botonBienvenido"
+           android:layout_margin="5dp"/>
+
+       <Button
+           android:id="@+id/tnPHorarios"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:text="Horarios"
+           android:onClick="PHorarios"
+           android:backgroundTint="@color/botonBienvenido"
+           android:layout_margin="5dp"/>
+
+
+   </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="343dp"
+        android:layout_height="271dp"
+        android:scrollbarSize="50dp"
+        android:src="@drawable/ic_usuario"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+    android:layout_width="374dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="111dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Nombres:"
+            android:textColor="@color/white" />
+
+    <EditText
+        android:id="@+id/edtPNombre"
+        android:layout_width="313dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:inputType="textMultiLine"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Apellido Paterno: "
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edtPApellidoPA"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Apellido Materno: "
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edtPApellidoMA"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Janampa"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView12132"
+            android:layout_width="113dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Dni: "
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edtPAdni"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="72813012"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Teléfono:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edtPTlefono"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="963740702"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+        />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="113dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Direccion:"
+            android:textColor="@color/white" />
+
+        <EditText
+            android:id="@+id/edtPDIreccion"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Jr. ayachucho 789"
+            android:inputType="textMultiLine"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+        />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPActualizar"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Actualizar "
+        android:onClick="PActualizar"
+        android:backgroundTint="@color/botonBienvenido"/>
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        >
+
+        <ImageView
+            android:id="@+id/imgBurbuja"
+            android:layout_width="650dp"
+            android:layout_height="60dp"
+            android:layout_gravity="right"
+            android:scrollbarSize="10dp"
+            android:onClick="PChat"
+            android:src="@drawable/ic_burbuja"></ImageView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

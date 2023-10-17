@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1003745705818",
+    "project_id": "easytrash-d0141",
+    "storage_bucket": "easytrash-d0141.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1003745705818:android:0868b0a793afa72286fd63",
+        "android_client_info": {
+          "package_name": "com.lmmt.easytrash"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwzu4NtkCThviyOr73oZoG8W1BXtgJSbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

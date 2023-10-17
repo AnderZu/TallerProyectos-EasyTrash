@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity"
+    android:background="@color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDPerfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Perfil"
+            android:onClick="MPerfil"
+            android:backgroundTint="@color/botonBienvenido"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnDDIreccion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Direccion"
+            android:onClick="MDireccion"
+            android:backgroundTint="@color/botonBienvenido"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/btnDHorarios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Horarios"
+            android:onClick="MHorarios"
+            android:backgroundTint="@color/botonBienvenido"
+            android:layout_margin="5dp"/>
+
+
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="395dp"
+        tools:context=".MapsActivity"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"/>
+
+    <LinearLayout
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:text="Su hubicación es: "
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/edtDDireccion"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Jr Ayacucho 798"
+            android:inputType="textMultiLine"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"/>
+        />
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btndActualizar"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Actualizar "
+        android:onClick="DActualizar"
+
+        android:backgroundTint="@color/botonBienvenido"/>
+
+
+</LinearLayout>
